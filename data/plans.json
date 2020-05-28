@@ -1,0 +1,110 @@
+[{
+    "maxPages": 3,
+    "category": "UI / UX",
+    "database": 0,
+    "avgRating": 4.5,
+    "_id": "5de38043aa5d010e58a2e47a",
+    "name": "Basic",
+    "description": "for small business",
+    "price": 499,
+    "duration": 3,
+    "numRatings": 0,
+    "numCustomers": 0,
+    "totalProjects": 0,
+    "numCompleted": 0,
+    "supervisedBy": [
+      "5c8a21f22f8fb814b56fa18a",
+      "5c8a22c62f8fb814b56fa18b"
+    ],
+    "coupons": [
+      "5e06171699f9ad3fc4749519",
+      "5e06171699f9ad3fc474951a",
+      "5e06171699f9ad3fc474951c"
+    ],
+    "technologyUsed": ["html", "css", "javascript", "sass"],
+    "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto optio ex fuga dolor laborum autem harum, temporibus laboriosam tempore quia et quidem! Non, doloribus odio. Quas placeat est perferendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis autem commodi neque ab earum similique esse asperiores veritatis ipsa sint inventore consectetur possimus reprehenderit assumenda ea, quisquam corporis aliquid magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ratione accusamus itaque, recusandae eius, tempore fuga aliquid eum culpa reprehenderit porro placeat excepturi eaque. Doloremque voluptas quis nesciunt enim excepturi.",
+    "__v": 0
+  },
+  {
+    "maxPages": 7,
+    "category": "UI / UX",
+    "database": 0,
+    "avgRating": 4.5,
+    "_id": "5de3806caa5d010e58a2e47b",
+    "name": "Static",
+    "description": "for small business",
+    "price": 999,
+    "duration": 5,
+    "numRatings": 0,
+    "numCustomers": 0,
+    "totalProjects": 0,
+    "numCompleted": 0,
+    "supervisedBy": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a201e2f8fb814b56fa186"
+    ],
+    "coupons": [
+      "5e06171699f9ad3fc4749519",
+      "5e06171699f9ad3fc474951a",
+      "5e06171699f9ad3fc474951c"
+    ],
+    "technologyUsed": ["html", "css", "javascript", "sass"],
+    "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto optio ex fuga dolor laborum autem harum, temporibus laboriosam tempore quia et quidem! Non, doloribus odio. Quas placeat est perferendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis autem commodi neque ab earum similique esse asperiores veritatis ipsa sint inventore consectetur possimus reprehenderit assumenda ea, quisquam corporis aliquid magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ratione accusamus itaque, recusandae eius, tempore fuga aliquid eum culpa reprehenderit porro placeat excepturi eaque. Doloremque voluptas quis nesciunt enim excepturi.",
+    "__v": 0
+  },
+  {
+    "maxPages": 5,
+    "category": "DEV",
+    "database": 1,
+    "avgRating": 4.5,
+    "_id": "5de380a0aa5d010e58a2e47c",
+    "name": "Dynamic",
+    "description": "for medium business",
+    "price": 1499,
+    "duration": 7,
+    "numRatings": 0,
+    "numCustomers": 0,
+    "totalProjects": 0,
+    "numCompleted": 0,
+    "supervisedBy": [
+      "5c8a1f292f8fb814b56fa184",
+      "5c8a1f4e2f8fb814b56fa185"
+    ],
+    "coupons": [
+      "5e06171699f9ad3fc4749519",
+      "5e06171699f9ad3fc474951c",
+      "5e06171699f9ad3fc474951d"
+    ],
+    "technologyUsed": ["html", "css", "javascript", "sass", "node js", "mongodb"],
+    "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto optio ex fuga dolor laborum autem harum, temporibus laboriosam tempore quia et quidem! Non, doloribus odio. Quas placeat est perferendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis autem commodi neque ab earum similique esse asperiores veritatis ipsa sint inventore consectetur possimus reprehenderit assumenda ea, quisquam corporis aliquid magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ratione accusamus itaque, recusandae eius, tempore fuga aliquid eum culpa reprehenderit porro placeat excepturi eaque. Doloremque voluptas quis nesciunt enim excepturi.",
+    "__v": 0
+  },
+  {
+    "maxPages": 7,
+    "category": "DEV",
+    "database": 1,
+    "avgRating": 4.5,
+    "_id": "5de380a0aa5d010e58a2e47d",
+    "name": "E-Commerce",
+    "description": "for large business",
+    "price": 1999,
+    "duration": 12,
+    "numRatings": 0,
+    "numCustomers": 0,
+    "totalProjects": 0,
+    "numCompleted": 0,
+    "supervisedBy": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a23412f8fb814b56fa18c",
+      "5c8a1f4e2f8fb814b56fa185"
+    ],
+    "coupons": [
+      "5e06171699f9ad3fc4749519",
+      "5e06171699f9ad3fc474951b",
+      "5e06171699f9ad3fc4749521"
+    ],
+    "technologyUsed": ["html", "css", "javascript", "sass", "node js", "mongodb"],
+    "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto optio ex fuga dolor laborum autem harum, temporibus laboriosam tempore quia et quidem! Non, doloribus odio. Quas placeat est perferendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis autem commodi neque ab earum similique esse asperiores veritatis ipsa sint inventore consectetur possimus reprehenderit assumenda ea, quisquam corporis aliquid magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ratione accusamus itaque, recusandae eius, tempore fuga aliquid eum culpa reprehenderit porro placeat excepturi eaque. Doloremque voluptas quis nesciunt enim excepturi.",
+    "__v": 0
+  }
+]

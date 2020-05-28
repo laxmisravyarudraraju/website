@@ -1,0 +1,69 @@
+extends manage_plans
+
+block manageContent
+    .managePlans__button.manage__button
+        a(href=`/${user.name.split(' ').join('').toLowerCase()}/manageplans/createplan`).manage__button--inline.managePlans__button--inline.managePlans__editPlans--link
+            .icon-edit.managePlans__link.manage__link.editPlans__link
+                svg.icon: use(xlink:href="/img/sprite.svg#icon-plus")
+            .managePlans__text.manage__text Create New Plan
+    .managePlans__editPlans
+        .managePlans__editPlans--heading.managePlans__activePlans--heading.manage__heading Active Plans 
+            span.totalActivePlans (#{plans.length})
+        .managePlans__activePlans
+            each plan in plans
+                .managePlans__activePlans--plan.activePlans__plan
+                    .managePlans__activePlans--planDetails
+                        .managePlans__activePlans--title #{plan.name}
+                        .managePlans__activePlans--controls.manage__controls
+                            .btn-full.btn-green.btn-edit.btn-edit-plan(data-id=`${plan._id}`)
+                                button.btn-white.icon-small
+                                    svg.icon: use(xlink:href="/img/sprite.svg#icon-pencil")
+                                .managePlans__activePlans--text.manage__text edit
+                            .btn-full.btn-red.btn-delete.btn-delete-plan(data-id="basic")
+                                button.btn-white.icon-small
+                                    svg.icon: use(xlink:href="/img/sprite.svg#icon-trash")
+                                .managePlans__activePlans--text.manage__text delete
+                    form.managePlans__form.editPlans__form(data-id=`${plan._id}`)
+                        .managePlans__form--item
+                            label(for="name").managePlans__label.editPlans__label Name
+                                .icon-required
+                                    svg.icon: use(xlink:href="/img/sprite.svg#icon-svg")
+                            input(type="text" required value=`${plan.name}`)#name.managePlans__input.editPlans__input
+                        .managePlans__form--item
+                            label(for="description").managePlans__label.editPlans__label Description
+                                .icon-required
+                                    svg.icon: use(xlink:href="/img/sprite.svg#icon-svg")
+                            input(type="text" required value=`${plan.description}`)#description.managePlans__input.editPlans__input
+                        .managePlans__form--item
+                            label(for="price").managePlans__label.editPlans__label Price
+                                .icon-required
+                                    svg.icon: use(xlink:href="/img/sprite.svg#icon-svg")
+                            input(type="number" required value=`${plan.price}`)#price.managePlans__input.editPlans__input
+                        .managePlans__form--item
+                            label(for="duration").managePlans__label.editPlans__label Duration
+                                .icon-required
+                                    svg.icon: use(xlink:href="/img/sprite.svg#icon-svg")
+                            input(type="number" required value=`${plan.duration}`)#duration.managePlans__input.editPlans__input
+                        .managePlans__form--item
+                            label(for="database").managePlans__label.editPlans__label Database
+                            input(type="number" value=`${plan.database}`)#database.managePlans__input.editPlans__input
+                        .managePlans__form--item
+                            label(for="maxPages").managePlans__label.editPlans__label Max. Pages
+                            input(type="number" value=`${plan.maxPages}`)#maxPages.managePlans__input.editPlans__input
+                        .managePlans__form--item
+                            label(for="category").managePlans__label.editPlans__label Category
+                                .icon-required
+                                    svg.icon: use(xlink:href="/img/sprite.svg#icon-svg")
+                            select(name="category" required).managePlans__input.editPlans__input#category
+                                - if (plan.category === 'UI / UX')
+                                    option(value="category" selected) UI / UX
+                                    option(value="category") DEV
+                                - else 
+                                    option(value="category") UI / UX
+                                    option(value="category" selected) DEV
+                        .managePlans__form--item
+                            label(for="summary").managePlans__label.editPlans__label Summary
+                            textarea(name="summary" style="resize: none;" cols="30" rows="10").managePlans__input.editPlans__input#summary #{plan.summary}
+                        .btn-managePlans--box
+                            button.btn-managePlans.btn-editPlan Update Plan
+                            button.btn-managePlans.btn-cancelEdit Cancel

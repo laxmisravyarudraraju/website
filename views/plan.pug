@@ -1,0 +1,207 @@
+extends layout
+
+block content
+    .popup
+        .popup__box
+            button.icon-small.btn.btn-close.icon-close
+                svg.icon.icon-close: use(xlink:href="/img/sprite.svg#icon-circle-with-cross")
+            form.login(action="/login" method="POST")
+                .form__box.auth__box.form__email
+                    input.form__input.auth__input(type="email" name="email" placeholder="Email Address" required)
+                    label.form__label.auth__label(for="email") Email Address
+                .form__box.auth__box.form__password
+                    input.form__input.auth__input(type="password" minlength="8" name="password" placeholder="Password" required)
+                    label.form__label.auth__label(for="password") Password
+                .form-buttons.auth-buttons
+                    button.btn.btn-inline.btn-login log In
+                    a(href="#").btn.btn-inline.btn-signup register
+    main.section-plan__main
+        section.planInfo
+            .planInfo__left
+                .planInfo__left--heading.plan__title= plan.name
+                .planInfo__left--summary= plan.summary
+            .planInfo__right
+                .planInfo__right--checklist
+                    ul.plans__plan--featuresBox
+                        li.plans__plan--features.planInfo__feature
+                            .icon-small.icon-check
+                                svg.icon: use(xlink:href="/img/sprite.svg#icon-checkbox-checked")
+                            .plans__feature--heading Pages :
+                            .plans__feature= `upto ${plan.maxPages} pages`
+                        li.plans__plan--features.planInfo__feature
+                            .icon-small.icon-check
+                                svg.icon: use(xlink:href="/img/sprite.svg#icon-checkbox-checked")
+                            .plans__feature(style="font-style: italic;")= plan.description
+                        li.plans__plan--features.planInfo__feature
+                            .icon-small.icon-check
+                                svg.icon: use(xlink:href="/img/sprite.svg#icon-checkbox-unchecked")
+                            .plans__feature--heading Database :
+                            .plans__feature= plan.database
+                        li.plans__plan--features.planInfo__feature
+                            .plans__feature--heading Category :
+                            .plans__feature= plan.category
+                        li.plans__plan--features.planInfo__feature
+                            .plans__feature--heading Duration :
+                            .plans__feature #{plan.duration} days
+        section.technologyUsed.js--wp-2
+            .technologyUsed__heading technologies we use
+            ul.technologyUsed__list
+                each el in plan.technologyUsed
+                    li.technologyUsed__item= el
+        section.projectStats
+            .projectStats__accepted.projectStats__field
+                span.projectStats__accepted--num.projectStats__num #{plan.totalProjects}+
+                span.projectStats__title Total Projects
+            .projectStats__completed.projectStats__field
+                span.projectStats__completed--num.projectStats__num #{plan.numCompleted}+
+                span.projectStats__title Completed Projects
+            .projectStats__customers.projectStats__field
+                span.projectStats__customers--num.projectStats__num= (plan.numCustomers === 0) ? 0 : `${plan.numCustomers}+`
+                span.projectStats__title Happy Customers
+        section.weFollow
+            .weFollow__heading we follow:
+            ul.weFollow__list
+                li.weFollow__item
+                    a.weFollow__item--heading.weFollow__link.activeItem(href="#") Study our valuable customer
+                    .weFollow__item--contentBox
+                        .weFollow__item--content
+                            span.weFollow__item--title Study our valuable customer
+                            |Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur, adipisicing elit. Amet iste corrupti, saep consectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur, adipisicing elit. Amet iste corrupti, saep.
+                li.weFollow__item
+                    a.weFollow__item--heading.weFollow__link(href="#") Research, Research, Research...
+                    .weFollow__item--contentBox
+                        .weFollow__item--content
+                            span.weFollow__item--title Research, Research, Research...
+                            |Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur, adipisicing elit. Amet iste corrupti, saep.
+                li.weFollow__item
+                    a.weFollow__item--heading.weFollow__link(href="#") Brainstorm
+                    .weFollow__item--contentBox
+                        .weFollow__item--content
+                            span.weFollow__item--title Brainstorm
+                            |Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur, adipisicing elit. Amet iste corrupti, saep consectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur.
+                li.weFollow__item
+                    a.weFollow__item--heading.weFollow__link(href="#") Sketch
+                    .weFollow__item--contentBox
+                        .weFollow__item--content
+                            span.weFollow__item--title Sketch
+                            |Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur, adipisicing elit. Amet iste corrupti, saep consectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur, adipisicing elit. Amet iste corrupti, saep.
+                li.weFollow__item
+                    a.weFollow__item--heading.weFollow__link(href="#") Concept Development
+                    .weFollow__item--contentBox
+                        .weFollow__item--content
+                            span.weFollow__item--title Concept Development
+                            |Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur, adipisicing elit. Amet iste corrupti, saep.
+                li.weFollow__item
+                    a.weFollow__item--heading.weFollow__link(href="#") Revisions
+                    .weFollow__item--contentBox
+                        .weFollow__item--content
+                            span.weFollow__item--title Revisions
+                            |Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur, adipisicing elit. Amet iste corrupti, saepconsectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur, adipisicing elit.
+                li.weFollow__item
+                    a.weFollow__item--heading.weFollow__link(href="#") Completion
+                    .weFollow__item--contentBox
+                        .weFollow__item--content
+                            span.weFollow__item--title Completion
+                            |Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur, adipisicing elit. Amet iste corrupti, saep sit amet consectetur, adipisicing elit. Amet iste corrupti, saep.
+        section.planReviews
+            .planReviews__heading Customer satisfaction - our goal
+            .planReviews__box
+                if user
+                    if !isReviewed && user.role !== 'admin'
+                        .planReviews__card
+                            figure.user__img.customer__img
+                                img(src=`/img/${user.photo}` alt="User Image").user__img--content.customer__img--content
+                            .customer__details= user.name
+                            .icon-large.icon-quote
+                                svg.icon: use(xlink:href="/img/sprite.svg#icon-quote")
+                            textarea(style="resize: none;" name="review" id="review" maxlength="125"
+                                cols="25" rows="5" placeholder="write your review...").addReview__textBox
+                            .planReviews__rating.rating
+                                .planReviews__stars.rating__stars
+                                    .icon-small.icon-starGrey.icon-clickable(data-rating="1")
+                                        svg.icon: use(xlink:href="/img/sprite.svg#icon-star-outlined")
+                                    .icon-small.icon-starGrey.icon-clickable(data-rating="2")
+                                        svg.icon: use(xlink:href="/img/sprite.svg#icon-star-outlined")
+                                    .icon-small.icon-starGrey.icon-clickable(data-rating="3")
+                                        svg.icon: use(xlink:href="/img/sprite.svg#icon-star-outlined")
+                                    .icon-small.icon-starGrey.icon-clickable(data-rating="4")
+                                        svg.icon: use(xlink:href="/img/sprite.svg#icon-star-outlined")
+                                    .icon-small.icon-starGrey.icon-clickable(data-rating="5")
+                                        svg.icon: use(xlink:href="/img/sprite.svg#icon-star-outlined")
+                            button.btn-sendReview add review
+                else
+                    .planReviews__card.addReview__card
+                        .addReview__box
+                            button.btn-addReview.icon-medium
+                                svg.icon
+                                    use(xlink:href="/img/sprite.svg#icon-circle-with-plus")
+                            .addReview__text Login to Review
+                each review in plan.reviews
+                    .planReviews__card
+                        figure.user__img.customer__img
+                            img.user__img--content.customer__img--content(src=`/img/${review.user.photo}` alt="User Image")
+                        .customer__details= review.user.name
+                        .icon-large.icon-quote
+                            svg.icon: use(xlink:href="/img/sprite.svg#icon-quote")
+                        .planReviews__review= review.review
+                        .planReviews__rating.rating
+                            .planReviews__stars.rating__stars
+                                - var rating = review.rating
+                                - var i = 1
+                                while i <= 5
+                                    if i <= rating
+                                        .icon-small.icon-star
+                                            svg.icon: use(xlink:href="/img/sprite.svg#icon-star-outlined")
+                                        - i++
+                                    else if i > rating && i <= 5
+                                        .icon-small.icon-starGrey
+                                            svg.icon: use(xlink:href="/img/sprite.svg#icon-star-outlined")
+                                        - i++
+                                .planRating #{rating} / 5 
+        section.planBuy
+            if user
+                .planBuy__left
+                    if offer.availableCoupons
+                        .planBuy__left--heading Coupons available
+                        .offerBox
+                            each coupon in offer.availableCoupons
+                                .offer(data-id=`${coupon._id}`)
+                                    .icon-small.icon-offer
+                                        svg.icon: use(xlink:href="/img/sprite.svg#icon-price-tag")
+                                    span.offer__percentage= `${coupon.offerPercentage*100}%`
+                                    .couponName= coupon.name
+                                    span.offerValidFor 
+                                    button.btn.btn-inline.btn-selectCoupon apply
+                                    //- .couponTag default
+                    .planBuy__priceBreakdown
+                        .planBuy__left--heading price breakdown
+                        .planBuy__priceBox.originalCost
+                            .planBuy__priceBox--title Original Cost
+                            .plans__plan--price.planBuy__priceBox--num.originalPrice
+                                //- span.numSign.numPositive + 
+                                | #{plan.price.toFixed(2)}
+                        .planBuy__priceBox.couponCodeApplied
+                            .planBuy__priceBox--title Coupon applied:
+                                span.couponApplied
+                            .plans__plan--price.planBuy__priceBox--num.discountPrice
+                                //- span.numSign.numNegative -
+                                | 
+                        .planBuy__priceBox.estimatedTotal
+                            .planBuy__priceBox--title Estimated Total
+                            .plans__plan--price.planBuy__priceBox--num.totalPrice
+                                //- span.numSign.numNegative -
+                                | #{plan.price.toFixed(2)}
+                .planBuy__right
+                    .planBuy__right--box
+                        figure.timer__img
+                            img.timer__img--content(src="/img/timer.gif" alt="timer")
+                        .deliveryDays__box Completion in 
+                            span.deliveryDays #{plan.duration} 
+                            | days
+                        a.planBuy__button.btn.btn-inline.buy__plan(href="#" data-id=`${plan.slug}`) Buy this plan
+            else
+                .planBuy__box
+                    figure.timer__img
+                        img(src="/img/timer.gif" alt="timer").timer__img--content
+                    .deliveryDays__box Completion in <span class="deliveryDays">3</span> days
+                    a.planBuy__button.btn.btn-inline.plan__login(href="#") Login to Buy

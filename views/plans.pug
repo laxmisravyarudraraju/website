@@ -1,0 +1,42 @@
+extends layout
+
+block content
+    main.plans
+        .main__heading Plans
+        .plans__container
+            each plan in plans
+                .plans__plan
+                    .plans__plan--header
+                        .side__heading.plans__heading--side= plan.name
+                        .plans__plan--summary= plan.description
+                    .plans__plan--body 
+                        ul.plans__plan--featuresBox 
+                            li.plans__plan--features
+                                .plans__feature--heading Pages :
+                                .plans__feature= `upto ${plan.maxPages} pages`
+                            li.plans__plan--features
+                                .plans__feature--heading Category :
+                                .plans__feature= plan.category
+                            li.plans__plan--features
+                                .plans__feature--heading Database :
+                                .plans__feature= plan.database
+                            li.plans__plan--features
+                                .plans__feature--heading Duration :
+                                .plans__feature= `${plan.duration} days`
+                        .plans__plan--stats.plans__box--sm
+                            .plans__projectsTotal.plans__box--side
+                                .plans__total--heading.plans__box--title Total Projects
+                                .plans__plan--projectsTotal.plans__box--number= plan.totalProjects
+                            .plans__projectsDone.plans__box--side 
+                                .plans__completed--heading.plans__box--title Finished Projects
+                                .plans__plan--projectsDone.plans__box--number= plan.numCompleted
+                            .plans__noCustomers.plans__box--side 
+                                .plans__noCustomers--heading.plans__box--title Happy Customers
+                                .plans__plan--noCustomers.plans__box--number= plan.numCustomers
+                    .plans__plan--foot.plans__box--sm
+                        .plans__price.plans__box--side
+                            .plans__price--heading.plans__box--title Price
+                            .plans__plan--price.plans__box--number 
+                                span.dollarSign $ 
+                                | #{plan.price}
+                        a.plans__detail--button.btn.btn-inline(href=`./plans/${plan.slug}`) Details &rarr;

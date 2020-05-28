@@ -1,0 +1,117 @@
+.form {
+
+    &__main {
+        height: 100vh;
+        position: relative;
+        text-align: center;
+
+        &--heading {
+            font-size: 1.4em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+    }
+
+    &__login {
+        background: var(--color-primary-light);
+        padding-top: 10em;
+
+        &--heading {
+            color: var(--color-grey-dark2);
+        }
+    }
+
+    &__signup {
+        background: var(--color-primary-light);
+        padding-top: 8.5em;
+
+        &--heading {
+            color: var(--color-grey-dark3);
+        }
+    }
+}
+
+.login,
+.signup {
+
+    &__form {
+        width: 35vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+    }
+}
+
+.login {
+
+    &__form {
+        transform: translate(-50%, -60%);
+    }
+}
+
+.signup {
+
+    &__form {
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+.btn-instead {
+    color: var(--color-grey-dark3);
+    margin-right: 5em;
+    text-transform: none;
+    background: none;
+    padding: 0.5em 0;
+    border-bottom: solid 1px var(--color-grey-dark3);
+    cursor: pointer;
+    box-shadow: none;
+    letter-spacing: 1px;
+
+    &:active {
+        box-shadow: none;
+    }
+}
+
+.page {
+
+    &__logo {
+        padding: 3em;
+        padding-bottom: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    &__signup {
+        background: var(--color-primary-light);
+        color: var(--color-grey-dark3);
+    }
+
+    &__login {
+        background: var(--color-primary-light);
+        color: inherit;
+    }
+
+    &__buy {
+        background: var(--color-white);
+        color: inherit;
+    }
+}
+
+.header__logo--link {
+
+
+    &:link,
+    &:visited {
+        color: inherit;
+        text-transform: uppercase;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+}

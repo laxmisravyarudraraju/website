@@ -1,0 +1,25 @@
+extends manage_blogs
+
+block blogContent
+    .manage__button.manage__blogs--button
+        a(href=`/${user.name.split(' ').join('').toLowerCase()}/manageblogs`).manage__button--inline.manage__addBlog
+            .icon-edit.manage__link.manage__blogs--link.editPlans__link
+                svg.icon: use(xlink:href="/img/sprite.svg#icon-plus")
+            .manage__blogs--text Add New Blog
+    .manage__heading.manage__editBlogs--heading Active Blogs 
+        span.totalActivePlans (12)
+    .manage__editBlogs--box
+        each blog in blogs
+            .manage__editBlogs--blog
+                figure.manage__editBlogs--img
+                    img(src=`/img/${blog.image}` alt="Blog Image").manage__editBlogs--content
+                .manage__editBlogs--title #{blog.title}
+                    .manage__controls.manage__editBlogs--controls
+                        .btn-full.btn-green.btn-edit.btn-editBlog
+                            button.btn-white.icon-small
+                                svg.icon: use(xlink:href="/img/sprite.svg#icon-pencil")
+                            .manage__button--text.manage__editBlogs--text edit
+                        .btn-full.btn-red.btn-delete.btn-deleteBlog
+                            button.btn-white.icon-small
+                                svg.icon: use(xlink:href="/img/sprite.svg#icon-trash")
+                            .manage__button--text.manage__editBlogs--text delete

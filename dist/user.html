@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="./js/jquery.js"></script>
+    <title> Sravya | Web Development | Web Design | Business | Strategy</title>
+</head>
+
+<body class="user__body">
+    <ul class="side-links">
+        <li class="side-links__item"><a href="#section__about" class="side-links__link icon-small icon__side">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#icon-facebook-with-circle"></use>
+                </svg>
+            </a></li>
+        <li class="side-links__item"><a href="#section__about" class="side-links__link icon-small icon__side">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#icon-instagram-with-circle"></use>
+                </svg>
+            </a></li>
+        <li class="side-links__item"><a href="#section__about" class="side-links__link icon-small icon__side">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#icon-linkedin-with-circle"></use>
+                </svg>
+            </a></li>
+        <li class="side-links__item"><a href="#section__about" class="side-links__link icon-small icon__side">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#icon-twitter-with-circle"></use>
+                </svg>
+            </a></li>
+    </ul>
+    <main class="user__main">
+        <!-- <header class="header">
+            <div class="header__logo">
+                sravyacodes.in
+            </div>
+            <ul class="nav header__nav">
+                <li class="nav__item header__nav--item"><a href="./alert.html"
+                        class="nav__link header__nav--link active">Home</a>
+                </li>
+        <li class="nav__item header__nav--item"><a href="./blogfeed.html" class="nav__link header__nav--link">Blog</a>
+        </li>
+        <li class="nav__item header__nav--item"><a href="./plans.html" class="nav__link header__nav--link">Plans</a>
+        </li>
+        <li class="nav__item header__nav--item"><a href="./user.html" class="nav__link header__nav--link">Contact</a>
+        </li>
+        <li class="nav__item header__nav--item"><a href="./loginPopup.html" class="nav__link header__nav--link">Sign
+                up</a>
+        </li>
+        </ul>
+        <div class="copy">
+            &copy;2019 by Laxmi Sravya Rudraraju
+        </div>
+        </header> -->
+        <!-- <section class="user__mainBox">
+            <form action="#" class="login">
+                <div class="form__box auth__box form__email">
+                    <input type="email" name="login-email" placeholder="Email Address" class="form__input auth__input"
+                        required>
+                    <label for="login-email" class="form__label auth__label">Email Address</label>
+                </div>
+                <div class="form__box auth__box form__password">
+                    <input type="password" minlength="8" name="login-password" placeholder="Password"
+                        class="form__input auth__input" required>
+                    <label for="login-password" class="form__label auth__label">Password</label>
+                </div>
+                <div class="form-buttons auth-buttons">
+                    <button class="btn btn-inline btn-login">log In</button>
+                    <button class="btn btn-inline btn-signup">register</button>
+                </div>
+            </form>
+        </section> -->
+        <header class="header">
+            <div class="header__logo">
+                sravyacodes.in
+            </div>
+            <div class="user__main--heading">
+                My Settings
+            </div>
+            <div class="user__controls">
+                <button class="btn-logout">Log out</button>
+                <a href="#" class="user__link">
+                    <figure class="user__img">
+                        <img src="./img/mine.jpeg" alt="User Image" class="user__img--content">
+                    </figure>
+                    <div class="user__name">
+                        Laxmi Sravya
+                    </div>
+                </a>
+            </div>
+        </header>
+        <section class="user__content">
+            <div class="sidebar__content">
+                <ul class="user__sidebar">
+                    <li class="user__sidebar--item active-option">
+                        <a href="" class="user__sidebar--link">
+                            <div class="icon-small icon-sidebar">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#icon-user"></use>
+                                </svg>
+                            </div>
+                            <div class="user__sidebar--text">Dashboard</div>
+                        </a>
+                    </li>
+                    <li class="user__sidebar--item">
+                        <a href="" class="user__sidebar--link">
+                            <div class="icon-small icon-sidebar">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
+                                </svg>
+                            </div>
+                            <div class="user__sidebar--text">Orders</div>
+                        </a>
+                    </li>
+                    <li class="user__sidebar--item">
+                        <a href="" class="user__sidebar--link">
+                            <div class="icon-small icon-sidebar">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                            </div>
+                            <div class="user__sidebar--text">Favourites</div>
+                        </a>
+                    </li>
+                    <li class="user__sidebar--item">
+                        <a href="" class="user__sidebar--link">
+                            <div class="icon-small icon-sidebar">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#icon-typing"></use>
+                                </svg>
+                            </div>
+                            <div class="user__sidebar--text">ask a question</div>
+                        </a>
+                    </li>
+                    <li class="user__sidebar--item">
+                        <a href="" class="user__sidebar--link">
+                            <div class="icon-small icon-sidebar">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#icon-cogs"></use>
+                                </svg>
+                            </div>
+                            <div class="user__sidebar--text">Settings</div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="sidebar__role--heading adminControls">
+                    Admin Controls
+                </div>
+                <ul class="user__sidebar">
+                    <li class="user__sidebar--item">
+                        <a href="" class="user__sidebar--link">
+                            <div class="icon-small icon-sidebar">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                                </svg>
+                            </div>
+                            <div class="user__sidebar--text">Inbox</div>
+                        </a>
+                    </li>
+                    <li class="user__sidebar--item">
+                        <a href="" class="user__sidebar--link">
+                            <div class="icon-small icon-sidebar">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#icon-pencil"></use>
+                                </svg>
+                            </div>
+                            <div class="user__sidebar--text">Manage Blog</div>
+                        </a>
+                    </li>
+                    <li class="user__sidebar--item">
+                        <a href="" class="user__sidebar--link">
+                            <div class="icon-small icon-sidebar">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#icon-circular-graph"></use>
+                                </svg>
+                            </div>
+                            <div class="user__sidebar--text">manage plans</div>
+                        </a>
+                    </li>
+                    <li class="user__sidebar--item">
+                        <a href="" class="user__sidebar--link">
+                            <div class="icon-small icon-sidebar">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#icon-users"></use>
+                                </svg>
+                            </div>
+                            <div class="user__sidebar--text">Manage users</div>
+                        </a>
+                    </li>
+                    <li class="user__sidebar--item">
+                        <a href="" class="user__sidebar--link">
+                            <div class="icon-small icon-sidebar">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#icon-stats-bars"></use>
+                                </svg>
+                            </div>
+                            <div class="user__sidebar--text">statistics</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="manage__blogs">
+                <div class="manage__button manage__blogs--button">
+                    <a href="#" class="manage__button--inline manage__addBlog">
+                        <div class="icon-edit manage__link manage__blogs--link editPlans__link">
+                            <svg class="icon">
+                                <use xlink:href="./img/sprite.svg#icon-plus"></use>
+                            </svg>
+                        </div>
+                        <div class="manage__blogs--text"> Add New Blog</div>
+                    </a>
+                </div>
+                <div class="manage__heading manage__editBlogs--heading">
+                    Active Blogs <span class="totalActivePlans">(12)</span>
+                </div>
+                <div class="manage__editBlogs--box">
+                    <div class="manage__editBlogs--blog">
+                        <figure class="manage__editBlogs--img">
+                            <img src="./img/blog-image-1.jpg" alt="Blog Image" class="manage__editBlogs--content">
+                        </figure>
+                        <div class="manage__editBlogs--title">Waves of AI, Who Owns the future</div>
+                        <div class="manage__controls manage__editBlogs--controls">
+                            <div class="btn-full btn-green btn-edit btn-editBlog" data-id="basic">
+                                <button class="btn-white icon-small">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#icon-pencil"></use>
+                                    </svg>
+                                </button>
+                                <div class="manage__button--text manage__editBlogs--text">
+                                    edit
+                                </div>
+                            </div>
+                            <div class="btn-full btn-red btn-delete btn-deleteBlog" data-id="basic">
+                                <button class="btn-white icon-small">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#icon-trash"></use>
+                                    </svg>
+                                </button>
+                                <div class="manage__button--text manage__editBlogs--text">
+                                    delete
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="manage__blogs--body">
+                    <form action="" class="addBlog__form">
+                        <input type="text" name="title" class="addBlog__input addBlog__input--title" maxlength="100"
+                            placeholder="Add title here">
+                        <textarea type="text" name="summary" rows="3" cols="30"
+                            class="addBlog__input addBlog__input--summary" maxlength="200"
+                            placeholder="Add Description here"></textarea>
+                        <textarea type="text" name="description" class="addBlog__input addBlog__input--description"
+                            rows="50" cols="30" minlength="500" placeholder=" add paragraph"></textarea>
+                        <button class="btn-manage btn-addCollection">
+                            <div class="icon-small btn-add">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#icon-plus"></use>
+                                </svg>
+                            </div>
+                            <div class="manage__text btn-addMedia--text">Add to collections</div>
+                        </button>
+                        <div class="addCollection__box">
+                            <input type="radio" name="collections" id="technology" value="technology"
+                                class="addCollection__input">
+                            <label for="technology" class="addCollection__label">technology</label>
+                            <input type="radio" name="collections" id="news" value="news" class="addCollection__input">
+                            <label for="news" class="addCollection__label">news</label>
+                            <button class="btn-cancel-edit-mode">cancel</button>
+                        </div>
+                        <div class="manage__blogs--buttons">
+                            <button class="btn-manage btn-addMedia">
+                                <div class="icon-small btn-add">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#icon-attachment"></use>
+                                    </svg>
+                                </div>
+                                <div class="manage__text btn-addMedia--text">Attach Image</div>
+                            </button>
+                            <button class="btn-manage btn-save">
+                                <div class="icon-small btn-white">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#icon-pencil"></use>
+                                    </svg>
+                                </div>
+                                <div class="manage__text btn-save--text">create blog</div>
+                            </button>
+                        </div>
+
+                    </form>
+                </div> -->
+            </div>
+
+            <!-- DASHBOARD TEMPLATE -->
+            <!-- <div class="user__mainBody">
+                 <div class="recent recent-order">
+                    <div class="recent__heading recent-order__heading">
+                        Recent Order
+                    </div>
+                    <div class="recent-order__box">
+                        <div class="recent__content recent-order__content">
+                            <div class="recent__heading--side recent-order__heading--side">
+                                Order Details:
+                            </div>
+                            <div class="recent-order__item">
+                                <div class="recent-order__item--heading">
+                                    Plan:
+                                </div>
+                                <div class="recent-order__item--info recen-order__plan">
+                                    Basic
+                                </div>
+                            </div>
+                            <div class="recent-order__item">
+                                <div class="recent-order__item--heading">
+                                    Order Date:
+                                </div>
+                                <div class="recent-order__item--info recent-order__orderDate">
+                                    27 February, 2019
+                                </div>
+                            </div>
+                            <div class="recent-order__item">
+                                <div class="recent-order__item--heading">
+                                    Delivery Date:
+                                </div>
+                                <div class="recent-order__item--info recent-order__deliveryDate">
+                                    3 March, 2019
+                                </div>
+                            </div>
+                            <div class="recent-order__item">
+                                <div class="recent-order__item--heading">
+                                    Price:
+                                </div>
+                                <div class="recent-order__item--info recent-order__paidAmount">
+                                    $499.00
+                                </div>
+                            </div>
+                            <div class="recent-order__item">
+                                <div class="recent-order__item--heading">
+                                    project under:
+                                </div>
+                                <ul class="recent-order__item--info projectHead__box">
+                                    <li class="recent-order__projectHead">
+                                        Laxmi Sravya Rudraraju (Developer)
+                                    </li>
+                                    <li class="recent-order__projectHead">
+                                        Nitin Varma Rudraraju (Designer)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="recent-order__buttons">
+                            <a href="#" class="recent-order__links btn btn-inline btn-progress">Check Progress</a>
+                            <a href="#" class="recent-order__links btn btn-inline btn-invoice btn-green">View
+                                Invoice</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="noOrders__box">
+                    <div class="noOrders__message"> No Orders Yet :(</div>
+                    <a href="./plans.html" class="plans__card--button btn btn-inline">see plans &rarr;</a>
+                </div>
+                <div class="recent recent-update">
+                    <div class="recent__heading recent-update__heading">
+                        Recent Updates
+                    </div>
+                    <div class="recent-update__content recent__content">
+                        <div class="recent-update__update">
+                            <div class="recent__heading--side recent-update__update--heading">
+                                Password Changed on:
+                            </div>
+                            <div class="recent-update__update--info">
+                                2 March, 2018
+                            </div>
+                        </div>
+                        <div class="recent-update__update">
+                            <div class="recent__heading--side recent-update__update--heading">
+                                Cover Image Changed on:
+                            </div>
+                            <div class="recent-update__update--info">
+                                3 March, 2018
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-blog">
+                    <a href="#" class="recent-blog__link">
+                        <figure class="recent-blog__box">
+                            <div class="recent__heading--side recent-blog__heading">
+                                Read Latest Blog
+                            </div>
+                            <div class="main__blog--overlay">&nbsp;</div>
+                            <img src="./img/blog-image-5.jpg" alt="Blog Image"
+                                class="recent-blog__img main__blog--content">
+                            <div class="main__blog--heading recent__heading--side">
+                                Waves of AI, Who owns ...
+                            </div>
+                        </figure>
+                    </a>
+
+                </div>
+            </div> -->
+            <!-- DASHBOARD TEMPLATE
+
+            ////////////////////////////////////////////////////////////////////////////////////
+
+            SETTINGS TEMPLATE -->
+            <!-- <div class="settings__body">
+                <div class="account__box settings__box">
+                    <div class="settings__heading">
+                        Your Account Settings
+                    </div>
+                    <form class="account__details">
+                        <div class="form__user-info">
+                            <span class="user-info__label">Email:</span>
+                            <input type="email" name="user-email" placeholder="laxmisravyarudraraju@gmail.com"
+                                class="user-info__input account__details--input" readonly>
+                        </div>
+                        <div class="form__user-info">
+                            <span class="user-info__label">Password:</span>
+                            <input type="email" name="user-email"
+                                placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"
+                                class="user-info__input account__details--input" readonly>
+                        </div>
+                        <div class="account__changeImgBox">
+                            <figure class="account__img">
+                                <img src="./img/dummy-user.jpg" alt="User Image" class="account__img--content">
+                            </figure>
+                            <a href="#" class="btn btn-inline btn-changeImg">Choose New Photo</a>
+                        </div>
+                        <div class="account__buttons">
+                            <button class="btn btn-inline btn-cancel btn-grey">Cancel</button>
+                            <button class="btn btn-inline btn-save btn-green">Update</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="passwordChange__box settings__box">
+                    <div class="settings__heading">
+                        Password Settings
+                    </div>
+                    <div class="account__details">
+                        <div class="form__user-info">
+                            <input type="email" name="user-email" placeholder="Current Password"
+                                class="user-info__input passwordChange__input">
+                        </div>
+                        <div class="form__user-info">
+                            <input type="email" name="user-email" placeholder="New Password"
+                                class="user-info__input passwordChange__input">
+                        </div>
+                        <div class="form__user-info">
+                            <input type="email" name="user-email" placeholder="Confirm Password"
+                                class="user-info__input passwordChange__input">
+                        </div>
+                    </div>
+                    <div class="account__buttons">
+                        <button class="btn btn-inline btn-cancel btn-grey">Cancel</button>
+                        <button class="btn btn-inline btn-save btn-green">Save</button>
+                    </div>
+                </div>
+             SETTINGS TEMPLATE 
+
+             //////////////////////////////////////////////////////////////////////////////////// 
+
+             ORDERS TEMPLATE 
+            <div class="orders__body">
+                <div class="recent recent-order">
+                    <div class="recent__heading recent-order__heading">
+                        Your Orders
+                    </div>
+                    <ul class="orders__box">
+                        <li class="orders__item">
+                            <div class="orders__content">
+                                <div class="recent__heading--side recent-order__heading--side">
+                                    Order <span class="orders__number">#f367e233</span>
+                                    <span class="orders__statusTag">In Progress</span>
+                                </div>
+                                <div class="recent-order__item">
+                                    <div class="recent-order__item--heading">
+                                        Plan:
+                                    </div>
+                                    <div class="recent-order__item--info recen-order__plan">
+                                        Basic
+                                    </div>
+                                </div>
+                                <div class="recent-order__item">
+                                    <div class="recent-order__item--heading">
+                                        Order Date:
+                                    </div>
+                                    <div class="recent-order__item--info recent-order__orderDate">
+                                        27 February, 2019
+                                    </div>
+                                </div>
+                                <div class="recent-order__item">
+                                    <div class="recent-order__item--heading">
+                                        Delivery Date:
+                                    </div>
+                                    <div class="recent-order__item--info recent-order__deliveryDate">
+                                        3 March, 2019
+                                    </div>
+                                </div>
+                                <div class="recent-order__item">
+                                    <div class="recent-order__item--heading">
+                                        Price:
+                                    </div>
+                                    <div class="recent-order__item--info recent-order__paidAmount">
+                                        $499.00
+                                    </div>
+                                </div>
+                                <div class="recent-order__item">
+                                    <div class="recent-order__item--heading">
+                                        Paid:
+                                    </div>
+                                    <div class="recent-order__item--info recent-order__paidAmount">
+                                        $200.00
+                                    </div>
+                                </div>
+                                <div class="recent-order__item">
+                                    <div class="recent-order__item--heading">
+                                        Outstanding:
+                                    </div>
+                                    <div class="recent-order__item--info recent-order__outstandingAmount">
+                                        $299.00
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__buttons recent-order__buttons">
+                                <a href="#" class="recent-order__links btn btn-inline btn-progress">Status</a>
+                                <a href="#" class="recent-order__links btn btn-inline btn-invoice btn-green">Invoice</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            ORDERS TEMPLATE -->
+            <!-- <div class="managePlans__body">
+                <div class="managePlans__button">
+                    <a href="#" class="managePlans__button--inline managePlans__editPlans--link">
+                        <div class="icon-edit managePlans__link editPlans__link">
+                            <svg class="icon">
+                                <use xlink:href="./img/sprite.svg#icon-plus"></use>
+                            </svg>
+                        </div>
+                        <div class="managePlans__text">Add New Plan</div>
+                    </a>
+                </div> -->
+            <!-- <div class="managePlans__editPlans">
+                    <div class="managePlans__editPlans--heading managePlans__activePlans--heading">
+                        Active Plans <span class="totalActivePlans">(4)</span>
+                    </div>
+                    <div class="managePlans__activePlans">
+                        <div class="managePlans__activePlans--plan activePlans__plan">
+                            <div class="managePlans__activePlans--planDetails">
+                                <div class="managePlans__activePlans--title">Basic</div>
+                                <div class="managePlans__activePlans--controls">
+                                    <div class="btn-full btn-green btn-edit" data-id="basic">
+                                        <button class="btn-white icon-small">
+                                            <svg class="icon">
+                                                <use xlink:href="./img/sprite.svg#icon-pencil"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="managePlans__activePlans--text">
+                                            edit
+                                        </div>
+                                    </div>
+                                    <div class="btn-full btn-red btn-delete" data-id="basic">
+                                        <button class="btn-white icon-small">
+                                            <svg class="icon">
+                                                <use xlink:href="./img/sprite.svg#icon-trash"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="managePlans__activePlans--text">
+                                            delete
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="managePlans__form editPlans__form" data-id="basic">
+                                <div class="managePlans__form--item">
+                                    <label for="name" class="managePlans__label editPlans__label">Name
+                                        <div class="icon-required">
+                                            <svg class="icon">
+                                                <use xlink:href="./img/sprite.svg#icon-svg"></use>
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <input type="text" id="name" required value="Basic"
+                                        class="managePlans__input editPlans__input">
+
+                                </div>
+                                <div class="managePlans__form--item">
+                                    <label for="description" class="managePlans__label editPlans__label">Description
+                                        <div class="icon-required">
+                                            <svg class="icon">
+                                                <use xlink:href="./img/sprite.svg#icon-svg"></use>
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <input type="text" id="description" required value="for small business"
+                                        class="managePlans__input editPlans__input">
+
+                                </div>
+                                <div class="managePlans__form--item">
+                                    <label for="price" class="managePlans__label editPlans__label">Price
+                                        <div class="icon-required">
+                                            <svg class="icon">
+                                                <use xlink:href="./img/sprite.svg#icon-svg"></use>
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <input type="number" id="price" required value="499"
+                                        class="managePlans__input editPlans__input">
+
+                                </div>
+
+                                <div class="managePlans__form--item">
+                                    <label for="duration" class="managePlans__label editPlans__label">Duration
+                                        <div class="icon-required">
+                                            <svg class="icon">
+                                                <use xlink:href="./img/sprite.svg#icon-svg"></use>
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <input type="number" id="duration" required value="3"
+                                        class="managePlans__input editPlans__input">
+                                </div>
+                                <div class="managePlans__form--item">
+                                    <label for="database" class="managePlans__label editPlans__label">Database</label>
+                                    <input type="number" id="database" value="0"
+                                        class="managePlans__input editPlans__input">
+                                </div>
+                                <div class="managePlans__form--item">
+                                    <label for="maxPages" class="managePlans__label editPlans__label">Max. Pages</label>
+                                    <input type="number" id="maxPages" value="5"
+                                        class="managePlans__input editPlans__input">
+                                </div>
+
+                                <div class="managePlans__form--item">
+                                    <label for="category" class="managePlans__label editPlans__label">Category
+                                        <div class="icon-required">
+                                            <svg class="icon">
+                                                <use xlink:href="./img/sprite.svg#icon-svg"></use>
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <select name="category" class="managePlans__input editPlans__input" required
+                                        value="UI / UX" id="category">
+                                        <option value="category"> UI / UX </option>
+                                        <option value="category"> DEV </option>
+                                    </select>
+
+                                </div>
+                                <div class="managePlans__form--item">
+                                    <label for="summary" class="managePlans__label editPlans__label">Summary</label>
+                                    <textarea name="summary" class="managePlans__input editPlans__input" id="summary"
+                                        style="resize: none;" cols="30" rows="10"></textarea>
+                                </div>
+                                <button class="btn-managePlans btn-editPlan btn-green"> Save </button>
+                            </form>
+                        </div>
+                    </div>
+                </div> -->
+
+            <!-- <div class="managePlans__addPlan">
+                    <a href="#" class="btn-addPlan--link">
+                        <div class="icon-large btn-addPlan">
+                            <svg class="icon">
+                                <use xlink:href="./img/sprite.svg#icon-circle-with-plus"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="managePlans__addPlan--text">
+                        Create New Plan
+                    </div>
+                </div> -->
+            <!-- <form class="managePlans__form createPlan__form">
+                    <div class="managePlans__form--item">
+                        <label for="name" class="managePlans__label createPlan__label">Name
+                            <div class="icon-required">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#icon-svg"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <input type="text" id="name" required class="managePlans__input createPlan__input">
+
+                    </div>
+                    <div class="managePlans__form--item">
+                        <label for="description" class="managePlans__label createPlan__label">Description
+                            <div class="icon-required">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#icon-svg"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <input type="text" id="description" required class="managePlans__input createPlan__input">
+
+                    </div>
+                    <div class="managePlans__form--item">
+                        <label for="price" class="managePlans__label createPlan__label">Price
+                            <div class="icon-required">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#icon-svg"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <input type="number" id="price" required class="managePlans__input createPlan__input">
+
+                    </div>
+
+                    <div class="managePlans__form--item">
+                        <label for="duration" class="managePlans__label createPlan__label">Duration
+                            <div class="icon-required">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#icon-svg"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <input type="number" id="duration" required class="managePlans__input createPlan__input">
+                    </div>
+                    <div class="managePlans__form--item">
+                        <label for="database" class="managePlans__label createPlan__label">Database</label>
+                        <input type="number" id="database" class="managePlans__input createPlan__input">
+                    </div>
+                    <div class="managePlans__form--item">
+                        <label for="maxPages" class="managePlans__label createPlan__label">Max. Pages</label>
+                        <input type="number" id="maxPages" class="managePlans__input createPlan__input">
+                    </div>
+
+                    <div class="managePlans__form--item">
+                        <label for="category" class="managePlans__label createPlan__label">Category
+                            <div class="icon-required">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#icon-svg"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <select name="category" class="managePlans__input createPlan__input" required id="category">
+                            <option value="category"> UI /UX </option>
+                            <option value="category"> DEV </option>
+                        </select>
+
+                    </div>
+                    <div class="managePlans__form--item">
+                        <label for="summary" class="managePlans__label createPlan__label">Summary</label>
+                        <textarea name="summary" class="managePlans__input createPlan__input" id="summary"
+                            style="resize: none;" cols="30" rows="10"></textarea>
+
+                    </div>
+                    <button class="btn-managePlans btn-createPlan">Create Plan</button>
+                </form> -->
+            </div>
+        </section>
+    </main>
+    <script src="./js/bundle.js"></script>
+</body>
+
+</html>

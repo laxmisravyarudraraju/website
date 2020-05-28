@@ -1,0 +1,35 @@
+extends user
+
+block content
+    .manage__blogs
+        block blogContent
+            .manage__button.manage__blogs--button
+                a(href=`/${user.name.split(' ').join('').toLowerCase()}/manageblogs/editblogs`).manage__button--inline.manage__addBlog
+                    .icon-edit.manage__link.manage__blogs--link.editPlans__link
+                        svg.icon: use(xlink:href="/img/sprite.svg#icon-pencil")
+                    .manage__text.manage__blogs--text Edit Blogs
+            .manage__blogs--body
+                form(action="").addBlog__form
+                    input(type="text" placeholder="Add title here" name="title" maxlength="100").addBlog__input.addBlog__input--title
+                    textarea(type="text" placeholder="Add Description here" name="summary" rows="3" cols="30" maxlength="200").addBlog__input.addBlog__input--summary
+                    textarea(type="text" name="description" rows="50" cols="30" minlength="500" placeholder=" add paragraph").addBlog__input.addBlog__input--description
+                    button.btn-manage.btn-addCollection
+                        .icon-small.btn-add
+                            svg.icon: use(xlink:href="/img/sprite.svg#icon-plus")
+                        .manage__text.btn-addMedia--text Add to collections
+                    .addCollection__box
+                        input(type="radio" name="collections" id="technology" value="technology").addCollection__input
+                        label(for="technology").addCollection__label technology
+                        input(type="radio" name="collections" id="news" value="news").addCollection__input
+                        label(for="news").addCollection__label news
+                        button.btn-cancel-edit-mode cancel
+                    .manage__blogs--buttons
+                        button.btn-manage.btn-addMedia
+                            .icon-small.btn-add
+                                svg.icon: use(xlink:href="/img/sprite.svg#icon-attachment")
+                            .manage__text.btn-addMedia--text Attach Image
+                        button.btn-manage.btn-save
+                            .icon-small.btn-white
+                                svg.icon: use(xlink:href="/img/sprite.svg#icon-pencil")
+                            .manage__text.btn-save--text create blog
+

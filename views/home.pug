@@ -1,0 +1,192 @@
+extends layout
+
+block content
+    ul.side-dots
+        li.side-dots__item
+            a#dot-1.side-dots__link.icon__dot(href="#")
+                svg.icon
+                    use(xlink:href="/img/sprite.svg#icon-radio-checked")
+        li.side-dots__item
+            a#dot-2.side-dots__link.icon__dot(href="#")
+                svg.icon
+                    use(xlink:href="/img/sprite.svg#icon-radio-checked")
+        li.side-dots__item
+            a#dot-3.side-dots__link.icon__dot(href="#")
+                svg.icon
+                    use(xlink:href="/img/sprite.svg#icon-radio-checked")
+        li.side-dots__item 
+            a#dot-4.side-dots__link.icon__dot(href="#")
+                svg.icon
+                    use(xlink:href="/img/sprite.svg#icon-radio-checked")
+        li.side-dots__item
+            a#dot-5.side-dots__link.icon__dot(href="#")
+                svg.icon
+                    use(xlink:href="/img/sprite.svg#icon-radio-checked")
+    if user
+        section.section__top--loggedIn#section-1
+            .section__top--wrap
+            .portfolioBox
+                figure.portfolioBox__img.current__img#img-1
+                    .portfolioBox__textBox
+                        .portfolioBox__heading Study our valuable customer
+                        .portfolioBox__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum et odit aut qui at voluptates saepe vero consequatur expedita ipsa placeat, tempora atque tempore possimus vel obcaecati quo vitae id.
+                    img(src="./img/portfolio-1.jpg" alt="Image").portfolioBox__img--content
+                figure.portfolioBox__img#img-2
+                    .portfolioBox__textBox
+                        .portfolioBox__heading Research, Research, Research...
+                        .portfolioBox__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum et odit aut qui at voluptates saepe vero consequatur expedita ipsa placeat.
+                    img(src="./img/portfolio-2.jpg" alt="Image").portfolioBox__img--content
+                figure.portfolioBox__img#img-3
+                    .portfolioBox__textBox
+                        .portfolioBox__heading Brainstorm
+                        .portfolioBox__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum et odit aut qui at voluptates saepe.
+                    img(src="./img/portfolio-3.jpg" alt="Image").portfolioBox__img--content
+                figure.portfolioBox__img#img-4
+                    .portfolioBox__textBox
+                        .portfolioBox__heading Sketch
+                        .portfolioBox__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum et odit aut qui at voluptates saepe vero consequatur expedita ipsa placeat, tempora.
+                    img(src="./img/portfolio-4.jpg" alt="Image").portfolioBox__img--content
+                figure.portfolioBox__img#img-5
+                    .portfolioBox__textBox
+                        .portfolioBox__heading Concept Development
+                        .portfolioBox__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum et odit aut qui at voluptates saepe.
+                    img(src="./img/portfolio-5.jpg" alt="Image").portfolioBox__img--content
+                figure.portfolioBox__img#img-6
+                    .portfolioBox__textBox
+                        .portfolioBox__heading Revisions
+                        .portfolioBox__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum et odit aut qui at voluptates saepe vero consequatur expedita.
+                    img(src="./img/portfolio-6.jpg" alt="Image").portfolioBox__img--content
+                figure.portfolioBox__img#img-7
+                    .portfolioBox__textBox
+                        .portfolioBox__heading Completion
+                        .portfolioBox__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum et odit aut qui at voluptates saepe vero.
+                    img(src="./img/portfolio-7.jpeg" alt="Image").portfolioBox__img--content
+            ul.slide-dots
+                li.slide-dots__item
+                    a(href="#")#slide-1.slide-dots__link.icon__dot.slide-active
+                        svg.icon: use(xlink:href="img/sprite.svg#icon-radio-checked")
+                li.slide-dots__item
+                    a(href="#")#slide-2.slide-dots__link.icon__dot
+                        svg.icon: use(xlink:href="img/sprite.svg#icon-radio-checked")
+                li.slide-dots__item
+                    a(href="#")#slide-3.slide-dots__link.icon__dot
+                        svg.icon: use(xlink:href="img/sprite.svg#icon-radio-checked")
+                li.slide-dots__item
+                    a(href="#")#slide-4.slide-dots__link.icon__dot
+                        svg.icon: use(xlink:href="img/sprite.svg#icon-radio-checked")
+                li.slide-dots__item
+                    a(href="#")#slide-5.slide-dots__link.icon__dot
+                        svg.icon: use(xlink:href="img/sprite.svg#icon-radio-checked")
+                li.slide-dots__item
+                    a(href="#")#slide-6.slide-dots__link.icon__dot
+                        svg.icon: use(xlink:href="img/sprite.svg#icon-radio-checked")
+                li.slide-dots__item
+                    a(href="#")#slide-7.slide-dots__link.icon__dot
+                        svg.icon: use(xlink:href="img/sprite.svg#icon-radio-checked")
+    else
+        section.section__top#section-1
+            .section__top--container
+                .section__top--left
+                    .icon-huge.icon-quote
+                        svg.icon: use(xlink:href="/img/sprite.svg#icon-quote")
+                    .quote invest for the long term
+                    .author &mdash; Warren Buffett
+                .section__top--right
+                    form.login(action="#")
+                        .form__box.auth__box.form__email
+                            input.form__input.auth__input(type="email" name="email" placeholder="Email Address" required)
+                            label.form__label.auth__label(for="email") Email Address
+                        .form__box.auth__box.form__password
+                            input.form__input.auth__input(type="password" minlength="8" name="password" placeholder="Password" required)
+                            label.form__label.auth__label(for="password") Password
+                        .form-buttons.auth-buttons
+                            button.btn.btn-inline.btn-login log In
+                            button.btn.btn-inline.btn-signup register
+            .down-arrow
+                a.icon-large.icon__down.btn-down(href="#")
+                    svg.icon: use(xlink:href="/img/sprite.svg#icon-chevron-thin-down")
+    section.section__about.js--wp-about#section-2
+        .about__heading.section__heading About
+        .about__content-box
+            .about__summary
+                .about__summary--heading.heading__tertiary a li'l bit about myself...
+                .about__summary--text
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, recusandae! Nihil iste commodi repudiandae praesentium similique, pariatur id nobis provident nostrum alias ipsum totam perspiciatis incidunt consequuntur eligendi voluptates? Qui lorem, ipsum.
+                |                                                                                                                  
+                | <br/> dolor sit amet consectetur adipisicing elit Nisi fuga molestias in eius sit est exercitationem adipisci possimus molestiae nemo incidunt mollitia deleniti rerum, esse dicta eveniet consequatur provident dolorem! 
+                .about__summary--sign
+                    figure.love-svg__box
+                        img.love-svg__content(src="/img/xoxo.png" alt="Love")
+                    .sign laxmi sravya rudraraju ;)
+            .about__skills
+                .about__skills--heading What am I good at?
+                figure.skills__img.img__box
+                    img.skills__img--content.img__box--content(src="/img/html-logo.png" alt="html logo")
+                figure.skills__img.img__box
+                    img.skills__img--content.img__box--content(src="/img/css-logo.png" alt="css logo")
+                figure.skills__img.img__box
+                    img.skills__img--content.img__box--content(src="/img/js-logo.png" alt="js logo")
+                figure.skills__img.img__box
+                    img.skills__img--content.img__box--content(src="/img/jquery-logo.gif" alt="jquery logo")
+                figure.skills__img.img__box
+                    img.skills__img--content.img__box--content(src="/img/angular-logo.png" alt="angular logo")
+                figure.skills__img.img__box
+                    img.skills__img--content.img__box--content(src="/img/vue-logo.png" alt="vue logo")
+                figure.skills__img.img__box
+                    img.skills__img--content.img__box--content(src="/img/react-logo.png" alt="react logo")
+                figure.skills__img.img__box
+                    img.skills__img--content.img__box--content(src="/img/sass-logo.png" alt="sass logo")
+                figure.skills__img.img__box
+                    img.skills__img--content.img__box--content(src="/img/node-logo.png" alt="node logo")
+                figure.skills__img.img__box
+                    img.skills__img--content.img__box--content(src="/img/mongodb-logo.png" alt="mongodb logo")
+                figure.skills__img.img__box
+                    img.skills__img--content.img__box--content(src="/img/php-logo.png" alt="php logo")
+                figure.skills__img.img__box
+                    img.skills__img--content.img__box--content(src="/img/mysql-logo.png" alt="mysql logo")  
+
+    section.section__plans.js--wp-plans#section-3
+        .section__heading plans
+        .plans__box
+            figure.plans__img.plans__grid.plans__grid--1
+                img.plans__img--content(src="/img/web-design.gif" alt="Web Design")
+            .plans__card.plans__grid.plans__grid--2
+                .plans__card--heading Web design
+                .plans__card--body Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ea commodi culpa ducimus minus obcaecati asperiores illo nisi, quasi maiores omnis? Ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, fugiat ut consequuntur tempore porro laboriosam aliquid modi.
+                ul.plans__card--tags
+                    li.plans__card--skills html 5
+                    li.plans__card--skills css 3
+                    li.plans__card--skills js
+                    li.plans__card--skills angular js
+            figure.plans__img.plans__grid.plans__grid--3
+                img.plans__img--content(src="/img/e-commerce.png" alt="E-commerce")
+            .plans__card.plans__grid.plans__grid--4
+                .plans__card--heading Dynamic / E-commerce website
+                .plans__card--body Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ea commodi culpa ducimus minus obcaecati asperiores illo nisi, quasi maiores omnis? Ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, fugiat ut consequuntur tempore porro laboriosam aliquid modi.
+                ul.plans__card--tags
+                    li.plans__card--skills html 5
+                    li.plans__card--skills css 3
+                    li.plans__card--skills js
+                    li.plans__card--skills angular js
+                    li.plans__card--skills php
+                    li.plans__card--skills my sql
+                a.plans__card--button.btn.btn-inline(href="./plans.html") see plans &rarr; 
+    section.section__contact#section-4
+        .contact__heading.section__heading ask me
+        .form__contact--box
+            .form__heading.heading__tertiary
+                span.contact__response Response within 24 hrs 
+                </br> any query, please leave a message!
+            form.form.form__contact(action="#")
+                .contact__details
+                    .form__box.contact__box.form__name
+                        input.form__input.contact__input(type="text" placeholder="Your Name" id="contact-name")
+                        label.form__label.contact__label(for="contact-name") Your Name
+                    .form__box.contact__box.form__email
+                        input.form__input.contact__input#contact-email(type="email" placeholder="Your Email")
+                        label.form__label.contact__label(for="contact-email") Your Email
+                .form__box.contact__box.form__message
+                    textarea.form__input.contact__input#message(name="message" placeholder="Your Message" cols="100" rows="1")
+                    label.contact__label.form__label(for="message") Your Message
+                .form-buttons.contact-buttons
+                    button.btn.btn-inline.btn-send Send it!

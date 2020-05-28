@@ -1,0 +1,109 @@
+[{
+        "offerActive": true,
+        "_id": "5e06171699f9ad3fc4749519",
+        "name": "FIRSTPURCHASE",
+        "offerPercentage": 0.2,
+        "offerValidFor": 3,
+        "offerStartDate": "2020-02-02T14:37:10",
+        "__v": 0
+    },
+    {
+        "offerActive": true,
+        "_id": "5e06171699f9ad3fc474951a",
+        "name": "DESIGN10",
+        "offerPercentage": 0.1,
+        "offerValidFor": 5,
+        "offerStartDate": "2020-02-03T14:37:10",
+        "__v": 0
+    },
+    {
+        "offerActive": true,
+        "_id": "5e06171699f9ad3fc474951c",
+        "name": "ALL5",
+        "offerPercentage": 0.05,
+        "offerValidFor": 5,
+        "offerStartDate": "2020-02-01T14:37:10",
+        "__v": 0
+    },
+    {
+        "offerActive": true,
+        "_id": "5e06171699f9ad3fc474951d",
+        "name": "DEV10",
+        "offerPercentage": 0.1,
+        "offerValidFor": 5,
+        "offerStartDate": "2020-02-01T14:37:10",
+        "__v": 0
+    },
+    {
+        "offerActive": true,
+        "_id": "5e06171699f9ad3fc474951b",
+        "name": "SAVE15",
+        "offerPercentage": 0.15,
+        "offerValidFor": 3,
+        "offerStartDate": "2020-02-01T11:54:10",
+        "__v": 0
+    },
+    {
+        "offerActive": true,
+        "_id": "5e06171699f9ad3fc474951e",
+        "name": "FESTIVE50",
+        "offerPercentage": 0.5,
+        "offerValidFor": 2,
+        "offerStartDate": "2020-02-04T11:52:10",
+        "__v": 0
+    },
+    {
+        "offerActive": true,
+        "_id": "5e06171699f9ad3fc4749521",
+        "name": "MYPROJECT10",
+        "offerPercentage": 0.1,
+        "offerValidFor": 5,
+        "offerStartDate": "2020-02-03T14:37:10",
+        "__v": 0
+    },
+    {
+        "offerActive": true,
+        "_id": "5e06171699f9ad3fc474951f",
+        "name": "GRAB25",
+        "offerPercentage": 0.25,
+        "offerValidFor": 3,
+        "offerStartDate": "2020-02-02T14:37:10",
+        "__v": 0
+    },
+    {
+        "offerActive": true,
+        "_id": "5e06171699f9ad3fc4749520",
+        "name": "WEBPRO15",
+        "offerPercentage": 0.15,
+        "offerValidFor": 5,
+        "offerStartDate": "2020-02-03T14:37:10",
+        "__v": 0
+    },
+    {
+        "offerActive": true,
+        "_id": "5e06171699f9ad3fc4749523",
+        "name": "NEW25",
+        "offerPercentage": 0.25,
+        "offerValidFor": 3,
+        "offerStartDate": "2020-02-02T14:37:10",
+        "__v": 0
+    },
+    {
+        "offerActive": true,
+        "_id": "5e06171699f9ad3fc4749524",
+        "name": "FREEDOM75",
+        "offerPercentage": 0.7,
+        "offerValidFor": 1,
+        "offerStartDate": "2020-02-03T14:37:10",
+        "__v": 0
+    },
+    {
+        "offerActive": true,
+        "_id": "5e06171699f9ad3fc4749522",
+        "name": "FRIDAY40",
+        "offerPercentage": 0.4,
+        "offerValidFor": 2,
+        "offerStartDate": "2020-02-04T14:37:10",
+        "__v": 0
+    }
+]
