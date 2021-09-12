@@ -8,7 +8,7 @@
     "dev": "nodemon server.js",
     "start:prod": "set NODE_ENV=production && node server.js",
     "compile:sass": "node-sass dist/sass/main.scss dist/css/style.css -w",
-    "watch:js": "webpack --mode development --open"
+    "build": "parcel build ./dist/js/index.js --out-dir ./dist/js --out-file bundle.js"
   },
   "author": "Laxmi Sravya Rudraraju",
   "license": "ISC",
@@ -18,7 +18,7 @@
     "babel-loader": "^8.2.2",
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12",
-    "webpack": "^5.52.0",
+    "webpack": "^5.52.1",
     "webpack-cli": "^4.8.0"
   },
   "dependencies": {
