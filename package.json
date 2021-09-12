@@ -10,6 +10,7 @@
     "compile:sass": "node-sass dist/sass/main.scss dist/css/style.css -w",
     "build": "parcel build ./dist/js/index.js --out-dir ./dist/js --out-file bundle.js"
   },
+ 
   "author": "Laxmi Sravya Rudraraju",
   "license": "ISC",
   "devDependencies": {
@@ -42,6 +43,6 @@
     "xss-clean": "^0.1.1"
   },
   "engines": {
-    "node": "10.16.3"
+    "node": "12.13.0"
   }
 }
