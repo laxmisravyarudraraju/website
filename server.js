@@ -11,15 +11,6 @@ require('dotenv').config({
 });
 
 const app = require('./app');
-const mongoose = require('mongoose');
-
-// connect atlas cloud db to app
-mongoose.connect(process.env.DB_URL.replace('<password>', process.env.DB_PASSWORD), {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true
-}).then(() => console.log('DB CONNECTION SUCCESSFUL!!!'));
 
 const port = process.env.PORT || 3000;
 

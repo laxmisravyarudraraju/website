@@ -1,34 +1,23 @@
 ul.side-links
     li.side-links__item
-        a(href="#section__about" class="side-links__link icon-small icon__side")
-            svg.icon: use(xlink:href="/img/sprite.svg#icon-facebook-with-circle")
-    li.side-links__item
-        a(href="#section__about" class="side-links__link icon-small icon__side")
-            svg.icon: use(xlink:href="/img/sprite.svg#icon-instagram-with-circle")
-    li.side-links__item
-        a(href="#section__about" class="side-links__link icon-small icon__side")
+        a(href="https://www.linkedin.com/in/laxmisravyarudraraju/" target="_blank" class="footer__discover--link icon-small icon__footer--linkedin")
             svg.icon: use(xlink:href="/img/sprite.svg#icon-linkedin-with-circle")
-    li.side-links__item
-        a(href="#section__about" class="side-links__link icon-small icon__side")
-            svg.icon: use(xlink:href="/img/sprite.svg#icon-twitter-with-circle")
+    li.footer__discover--item
+        a.footer__discover--link.icon-small.icon__footer--linkedin(href="https://github.com/laxmisravyarudraraju" target="_blank")
+            svg.icon.fusion: use(xlink:href="/img/fusion-interface.svg#github")
+    
 
 header.header
-    .header__logo sravyacodes.in
+    .header__logo SRAVYACODES
     ul.nav.header__nav
         li.nav__item.header__nav--item
-            a.nav__link.header__nav--link(href='/home' data-id="home") Home
+            a.nav__link.header__nav--link(href='/' data-id="home") Home
         li.nav__item.header__nav--item
-            a.nav__link.header__nav--link(href='/blogs' data-id="blogs") Blog
+            a.nav__link.header__nav--link(href='/projects' data-id="blogs") Projects
         li.nav__item.header__nav--item
-            a.nav__link.header__nav--link(href='/plans' data-id="plans") Plans
+            a.nav__link.header__nav--link(href='/experience' data-id="plans") Experience
         li.nav__item.header__nav--item
             a.nav__link.header__nav--link(href='/contact' data-id="contact") Contact
-        if user
-            li.nav__item.header__nav--item
-                a.nav__link.header__nav--link(href=`/${user.name.split(' ').join('').toLowerCase()}`) My Account
-        else
-            li.nav__item.header__nav--item
-                a.nav__link.header__nav--link(href='/signup' data-id="signup") Signup
         
     .copy &copy;2019 by Laxmi Sravya Rudraraju
             

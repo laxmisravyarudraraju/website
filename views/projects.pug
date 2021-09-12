@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    main.section__main
+        .main__heading My Projects
+        //- ul.blogfeed__collections
+        //-     li.blogfeed__collections--item(data-id="all")
+        //-         a.blogfeed__collections--link(href="/blogs") All collections
+        //-     li.blogfeed__collections--item(data-id="technology")
+        //-         a.blogfeed__collections--link(href="/blogs?collections=technology") technology
+        //-     li.blogfeed__collections--item(data-id="news")
+        //-         a.blogfeed__collections--link(href="/blogs?collections=news") news
+        .blogfeed
+            each project in projects
+                a.blogfeed__blog--link(href=`./projects/${project.slug}`)
+                    .blogfeed__blog
+                        figure.blogfeed__blog--img
+                            img.blogfeed__blog--content(src=`/img/${project.image}` alt="Blog Image 1")
+                        .blogfeed__blog--body
+                            .blogfeed__blog--date= project.date
+                            .blogfeed__blog--heading= project.title
+                            .blogfeed__blog--summary= project.summary
+                        //- .blog__stats
+                        //-     .blog__review
+                        //-         .blog__likes
+                        //-             button.icon-small.icon-likes.icon__stats
+                        //-                 svg.icon: use(xlink:href="/img/sprite.svg#icon-heart-outlined")
+                        //-             span.blog__likes--number= blog.likes
+                        //-         .blog__views
+                        //-             button.icon-small.icon-views.icon__stats
+                        //-                 svg.icon: use(xlink:href="/img/sprite.svg#icon-eye")
+                        //-             span.blog__views--number= blog.views
