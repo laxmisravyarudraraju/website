@@ -192,14 +192,14 @@
 }
 
 .section__about {
-    height: 100vh;
+    //height: 100vh;
     background: var(--color-red);
     position: relative;
     padding: 5em;
 }
 
 .section__blog {
-    height: 100vh;
+    //height: 100vh;
     background: var(--color-grey-light3);
     position: relative;
     padding: 5em;
@@ -208,7 +208,7 @@
 }
 
 .section__contact {
-    height: 100vh;
+    //height: 100vh;
     background: var(--color-red-light);
     position: relative;
     padding: 6em;
@@ -222,7 +222,7 @@
 }
 
 .section__footer {
-    height: 100vh;
+    //height: 100vh;
     background: var(--color-primary-dark);
     padding: 5em;
     display: flex;
@@ -232,7 +232,7 @@
 
 //
 .section__plans {
-    height: 100vh;
+    //height: 100vh;
     background: #ffb6af;
     padding: 5em;
     overflow: hidden;
